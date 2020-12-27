@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { CardList } from "./components/card-list/card-list.component";
+import { medicines } from "./data/medicines";
+import { Card } from "./components/card/card.component";
+import { SearchBox } from "./components/search-box/search-box.component";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      medicineList: medicines,
+      searchText: ""
+    };
+  }
+  handleChange = e => {
+    this.setState({ searchText: e.target.value });
+  };
+  render() {
+    const filteredMedicines = this.state.medicineList.filter(med =>
+      med.toLowerCase().includes(this.state.searchText.toLowerCase())
+    );
+    return (
+      <div className="app">
+        <SearchBox handleChange={this.handleChange}></SearchBox>
+        <CardList>
+          {filteredMedicines.map(med => (
+            <Card key={med}>{med}</Card>
+          ))}
+        </CardList>
+      </div>
+    );
+  }
 }
 
 export default App;
