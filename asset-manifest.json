@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/my-list-app/static/css/main.bec6449a.chunk.css",
+    "main.js": "/my-list-app/static/js/main.c85f317e.chunk.js",
+    "main.js.map": "/my-list-app/static/js/main.c85f317e.chunk.js.map",
+    "runtime-main.js": "/my-list-app/static/js/runtime-main.2e3f867d.js",
+    "runtime-main.js.map": "/my-list-app/static/js/runtime-main.2e3f867d.js.map",
+    "static/js/2.b405a9b9.chunk.js": "/my-list-app/static/js/2.b405a9b9.chunk.js",
+    "static/js/2.b405a9b9.chunk.js.map": "/my-list-app/static/js/2.b405a9b9.chunk.js.map",
+    "static/js/3.d5f9d657.chunk.js": "/my-list-app/static/js/3.d5f9d657.chunk.js",
+    "static/js/3.d5f9d657.chunk.js.map": "/my-list-app/static/js/3.d5f9d657.chunk.js.map",
+    "index.html": "/my-list-app/index.html",
+    "static/css/main.bec6449a.chunk.css.map": "/my-list-app/static/css/main.bec6449a.chunk.css.map",
+    "static/js/2.b405a9b9.chunk.js.LICENSE.txt": "/my-list-app/static/js/2.b405a9b9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e3f867d.js",
+    "static/js/2.b405a9b9.chunk.js",
+    "static/css/main.bec6449a.chunk.css",
+    "static/js/main.c85f317e.chunk.js"
+  ]
+}
